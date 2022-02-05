@@ -1,3 +1,32 @@
 .header {
+    font-family: 'Teko', sans-serif;
+    color:greenyellow;
+    background-color: black;
+    text-align: center;
+    font-size: 50px;
+}
+
+.webNav a:hover {
+  background-color: darkslategrey;
+  color: deepskyblue;
+}
+
+.webNav a {
+  float: center;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+.webNav {
+    text-align: center;
+}
+
+.earth{
+    height: 200px;
+    width: 200px;
+    padding-top: 50px;
     
 }
