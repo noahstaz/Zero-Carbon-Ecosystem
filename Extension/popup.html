@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Traversy Media Quick Launcher</title>
+    <title>Donating Carbon Coin for Environment</title>
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans"
       rel="stylesheet"
@@ -49,7 +49,14 @@
         align-items: center;
         border-bottom: 0.5px solid #dadada;
       }
-
+      .modal-list {
+          align-items: center;
+          border-top: 0.5px solid #dadada;
+          padding: 0 22px;
+          padding-top: 10px;
+          text-align: center;
+          
+      }
       .modal-content {
         padding: 0 22px;
       }
@@ -74,26 +81,7 @@
         font-size: 18px;
       }
 
-      .flex-container {
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 22px;
-      }
 
-      .flex {
-        opacity: 1;
-        transition: opacity 0.2s ease-in-out;
-        width: 120px;
-      }
-
-      .flex:hover {
-        opacity: 0.4;
-      }
-
-      .flex .fa {
-        font-size: 40px;
-        color: #2f5876;
-      }
     </style>
     <script src="popup.js"></script>
   </head>
@@ -101,42 +89,26 @@
   <body>
     <div class="modal-header">
       <h1 class="logo">
-        <img class="logo-icon" src="images/traversy-logo.png" />Traversy
-        Launcher
+        <img class="logo-icon" src="images/traversy-logo.png" />Carbon Coin
+        Extension
         <span class="version">(1.0.0)</span>
       </h1>
     </div>
     <div class="modal-content">
-      <p>Easily Access Traversy Media content</p>
+      <p>Easily Donate Carbon Coin</p>
     </div>
-    <div class="modal-icons">
-      <div class="flex-container">
-        <div class="flex">
-          <a href="https://www.traversymedia.com" target="_blank">
-            <i class="fa fa-globe" style="color:darksalmon "></i>
-          </a>
-        </div>
-        <div class="flex">
-          <a href="https://www.youtube.com/traversymedia" target="_blank">
-            <i class="fa fa-youtube" style="color:darksalmon "></i>
-          </a>
-        </div>
-        <div class="flex">
-          <a href="https://www.twitter.com/traversymedia" target="_blank">
-            <i class="fa fa-twitter" style="color:darksalmon "></i>
-          </a>
-        </div>
-        <div class="flex">
-          <a href="https://www.facebook.com/traversymedia" target="_blank">
-            <i class="fa fa-facebook" style="color:darksalmon "></i>
-          </a>
-        </div>
-        <div class="flex">
-          <a href="https://www.github.com/bradtraversy" target="_blank">
-            <i class="fa fa-github" style="color:darksalmon "></i>
-          </a>
-        </div>
-      </div>
+    <div class="modal-list">
+        <a href="https://www.traversymedia.com" target="_blank">
+        <button>
+            Pay Now!
+        </button>
+        </a>
+        <a href="https://www.traversymedia.com" target="_blank">
+            <button>
+                Buy Carbon Coin!
+            </button>
+        </a>
     </div>
+
   </body>
 </html>
