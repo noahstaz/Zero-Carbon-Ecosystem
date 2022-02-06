@@ -1,9 +1,10 @@
-.header {
+.title {
     font-family: 'Teko', sans-serif;
     color:greenyellow;
     background-color: black;
     text-align: center;
-    font-size: 50px;
+    font-size: 45px;
+
 }
 
 .webNav a:hover {
@@ -13,11 +14,13 @@
 
 .webNav a {
   float: center;
-  color: black;
+  color: ghostwhite;
   text-align: center;
   padding: 14px 16px;
   text-decoration: underline;
   font-size: 30px;
+  background-color: slategrey;
+    
 }
 
 .webNav {
@@ -29,4 +32,48 @@
     width: 200px;
     padding-top: 50px;
     
+}
+
+.header{
+    
+    background-color: darkslategrey;
+    padding-bottom: 50px;
+}
+
+.webNav a.buy {
+    color: yellow
+}
+
+.aboutUs h2 {
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+}
+
+.ecoSystem h2 {
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+}
+
+.ourAims h2 {
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+}
+
+.roadMap h2 {
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+}
+
+.ourTeam h2 {
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+}
+
+.faq h2 {
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+}
+
+body {
+    background-color: skyblue;
 }
