@@ -72,7 +72,6 @@
       }
       .modal-list {
           align-items: center;
-          border-top: 0.5px solid black;
           padding: 0 22px;
           padding-top: 40px;
           text-align: center;
@@ -103,9 +102,16 @@
       .modal-content {
         border-top: 0.5px solid black;
         padding: 0 22px;
+        padding-bottom: 20px;
         text-align: center;
       }
-
+      .inbox{
+        padding-top: 20px;
+        text-align: center;
+        align-items: center;
+        color: black;
+        background-color: ghostwhite;
+      }
       .modal-icons {
         border-top: 0.5px solid black;
         height: 50px;
@@ -139,31 +145,20 @@
       </h1>
     </div>
     <div class="headcol">
-    <div class = "address">
-        <p>
-            Wallet Address: <br> 0x025...25be
-        </p>
-
-    </div>
     <div class="modal-content">
       <p>Easily Pay Carbon Fees</p>
     </div>
-    <div class = "account">
-        <p>  Account Balance: <br> 0.540 ZCARB</p>
-        <div class = "small"><p> (0.00001 CAD)</p></div>
     </div>
+    <div class = "inbox">
+        <label> Enter Your Address:</label><br>
+        <input type="text" id = "el" class = "box"><br>
     </div>
     <div class="modal-list">
-        <a href="calculation.html">
-            <button class = "selbut">
-                Pay
-            </button>
-        </a>
-        <a href="https://www.traversymedia.com" target="_blank">
-            <button class="selbut">
-                Buy
-            </button>
-        </a>
-    </div>
+      <a href="main.html">
+          <button class = "selbut">
+              Enter
+          </button>
+      </a>
+  </div>
   </body>
 </html>
