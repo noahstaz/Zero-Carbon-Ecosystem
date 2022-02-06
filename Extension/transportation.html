@@ -17,15 +17,11 @@
       crossorigin="anonymous"
     />
     <script type="text/javascript">
-        function calc(electricity, natgas, heatoil, coal, lpg, propane, woodpallet){
+        function calc(flight, car, railway){
             var sum = 0;
-            sum += electricity * 0.0004239;
-            sum += natgas * 0.00018316;
-            sum += heatoil * 0.009615;
-            sum += coal * 0.00034462;
-            sum += lpg * 0.00628608;
-            sum += propane * 0.00589423;
-            sum += woodpallet * 0.07261754;
+            sum += flight * 0.090;
+            sum += car * 0.000206;
+            sum += railway * 0.000012;
             document.getElementById("sum").innerHTML = sum;
         }
     </script>
@@ -174,27 +170,16 @@
     </div>
     </div>
     <div class = "inbox">
-        <label> Electricity(kWh):</label><br>
-        <input type="text" id = "el" class = "box"><br>
-        <label> Natural Gas(kWh):</label><br>
-        <input type="text" id = "ng" class = "box"><br>
-        <label> Heating Oil(US Gallons):</label><br>
-        <input type="text" id = "ho" class = "box"><br>
-        <label> Coal(kWh):</label><br>
-        <input type="text" id = "cp" class = "box"><br>
-        <label> LPG(therms):</label><br>
-        <input type="text" id = "lpg" class = "box"><br>
-        <label> Propane(US Gallons):</label><br>
-        <input type="text" id = "pr" class = "box"><br>
-        <label> Wooden Pallets(metric tons):</label><br>
-        <input type="text" id = "wp" class = "box"><br>
-        <input type="submit" value="Submit" class = "sub" onclick = "calc(document.getElementById('el').value,
-         document.getElementById('ng').value, 
-         document.getElementById('ho').value, 
-         document.getElementById('cp').value, 
-         document.getElementById('lpg').value, 
-         document.getElementById('pr').value, 
-         document.getElementById('wp').value)";>
+        <label> Total Flight Duration(hours):</label><br>
+        <input type="text" id = "fl" class = "box"><br>
+        <label> Total Car Transportation(km):</label><br>
+        <input type="text" id = "cr" class = "box"><br>
+        <label> Total Railway Transportation(km):</label><br>
+        <input type="text" id = "rw" class = "box"><br>
+        <input type="submit" value="Submit" class = "sub" onclick = "calc(
+         document.getElementById('fl').value, 
+         document.getElementById('cr').value, 
+         document.getElementById('rw').value)";>
          <p> Your Carbon Fee:<br></p>
         <p id = "sum"></p>
         <p> ZCARB</p>
