@@ -1,10 +1,10 @@
 .title {
-    font-family: 'Teko', sans-serif;
-    color:greenyellow;
-    background-color: black;
+    font-family: 'Londrina Outline', cursive;
+    color:black;
     text-align: center;
-    font-size: 45px;
-
+    font-size: 55px;
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 5px;
 }
 
 .webNav a:hover {
@@ -32,14 +32,15 @@
 .earth{
     height: 200px;
     width: 200px;
-    padding-top: 50px;
-    
+   
 }
 
 .header{
     
-    background-color: darkslategrey;
-    padding-bottom: 50px;
+    background-color: #038099;
+    padding-bottom: 150px;
+    border-style: dotted;
+    background-image: url("https://static.scientificamerican.com/sciam/cache/file/A0F7CB66-9808-4518-B0E5D065AE4CFE7F_source.jpg");
 }
 
 .webNav a.buy {
@@ -117,39 +118,13 @@ body {
 }
 
 
-.accordion {
-  background-color: black;
-  color: lawngreen;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 16px;
-  border-radius: 20px;
-  border-style: groove;
-    
+.pres{
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 40px;
 }
 
 
-.active, .accordion:hover {
-  background-color: #111112;
-}
-
-.panel {
-  padding: 0 18px;
-  background-color: #111111;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  font-family: 'DM Sans', sans-serif;
-  color: aquamarine;
-  border-radius: 20px;
-  border-style: groove;
-}
 
 .pin{
     width:20px;
