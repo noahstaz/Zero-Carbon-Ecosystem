@@ -1,0 +1,232 @@
+.title {
+    font-family: 'Londrina Outline', cursive;
+    color:white;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 5px;
+}
+
+.webNav a:hover {
+  background-color: darkslategrey;
+  color: deepskyblue;
+}
+
+.webNav a {
+  float: center;
+  color: ghostwhite;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+  font-size: 30px;
+  background-color: #111111;
+  border-radius: 10px;
+  border-style: groove;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.webNav {
+    text-align: center;
+}
+
+.pic{
+    height: 800px;
+    width: 1400px;
+}
+.earth{
+    height: 200px;
+    width: 200px;
+    padding: 300px;
+   
+}
+
+.header{
+    
+    background-color: #038099;
+    padding-bottom: 30px;
+    border-style: dotted;
+    background-color:#111111;
+}
+
+.webNav a.buy {
+    color: yellow
+}
+
+.aboutUs h2 {
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    
+}
+
+.aboutUs h6 {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px;
+    text-align:left;
+    padding-left: 240px;
+    padding-right: 240px;
+}
+
+.ourAims h6 {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px;
+    text-align:left;
+    padding-left: 240px;
+    padding-right: 240px;
+}
+
+
+.vision h6 {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px;
+    text-align:left;
+    padding-left: 240px;
+    padding-right: 240px;
+}
+
+.ecoSystem h6 {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px;
+    text-align:left;
+    padding-left: 240px;
+    padding-right: 240px;
+}
+
+.carbonPay h6 {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px;
+    text-align:left;
+    padding-left: 240px;
+    padding-right: 240px;
+}
+.gif{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 50px
+}
+.z{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px; 
+  height: 300px;
+  border-radius: 50px
+}
+
+.ecoSystem h2 {
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+    font-size: 80px;
+    padding-bottom: 40px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.ourAims h2 {
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.ourAims h4 {
+    font-size: 40px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.chrome {
+    height: 22px;
+    width: 22px;
+}
+
+.footer{
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.arrow {
+    width:100px;
+    height:100px;
+}
+
+.carbonPay h2 {
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.ourTeam h2 {
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.vision h2 {
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+
+.pres{
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 40px;
+}
+
+.us{
+    height: 200px;
+    width: 200px;
+}
+
+.name{
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+.everyone{
+    text-align: center;
+}
+
+
+.pin{
+    width:20px;
+    height:30px;
+    padding-left: 50px;
+}
+
+.roadMap h6{
+    font-size: 25px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.check {
+    width: 25px;
+    height: 25px;
+    background-color: azure;
+    border-radius: 45px;
+    border-style: outset;
+    padding: 10px;
+    background-position: right;
+}
