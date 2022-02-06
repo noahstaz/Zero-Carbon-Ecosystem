@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;1,500&family=Secular+One&display=swap" rel="stylesheet">
   <head>
@@ -16,6 +16,13 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
+    <script type="text/javascript">
+        function calc(cus){
+            var sum = 0;
+            sum += cus;
+            document.getElementById("sum").innerHTML = sum;
+        }
+    </script>
     <style>
       /* Modal Structure */
 
@@ -29,7 +36,7 @@
         color: ghostwhite;
         width: 400px;
       }
-
+        
       h1 {
         font-size: 22px;
         font-weight: 400;
@@ -64,6 +71,12 @@
       .small {
           font-size: 15px;
       }
+      .inbox{
+        padding-top: 20px;
+        text-align: center;
+        align-items: center;
+        color: black;
+      }
       .modal-header {
         align-items: center;
         border-top: 0.5px solid black;
@@ -72,7 +85,6 @@
         
       }
       .modal-list {
-          align-items: center;
           padding: 0 22px;
           padding-top: 40px;
           text-align: center;
@@ -80,29 +92,9 @@
           padding-bottom: 40px;
       }
       .selbut{
-        font-size: 20px;
-        text-align: center;
-        width: 155px;
-        margin-right: 20px;
-        height: 155px;
-        border-radius: 50%;
-        color: black;
-        border: 3px solid;
-        font-family: 'Secular One', sans-serif;
-        border-color: black;
-      }
-      .selbut:hover{
-          font-size: 20px;
-          border: none;
-          color: ghostwhite;
-          border-color: ghostwhite;
-          background-color: green;
-      }
-      .selbut2{
         font-size: 10px;
-        text-align: center;
         width: 50px;
-        margin-right: 10px;
+        margin-right: 20px;
         height: 50px;
         border-radius: 50%;
         color: black;
@@ -110,7 +102,7 @@
         font-family: 'Secular One', sans-serif;
         border-color: black;
       }
-      .selbut2:hover{
+      .selbut:hover{
           font-size: 10px;
           border: none;
           color: ghostwhite;
@@ -145,6 +137,12 @@
         color: #444;
         font-size: 8px;
       }
+      .sub {
+          margin-top: 10px;
+      }
+      .box {
+          margin-bottom: 10px;
+      }
     </style>
     <script src="popup.js"></script>
   </head>
@@ -167,27 +165,27 @@
       <p>Easily Pay Carbon Fees</p>
     </div>
     </div>
-    <div class="modal-list">
-      <a href = "house.html">
-          <button class = "selbut">
-              House
-          </button>
-      </a>
-      <a href = "transportation.html">
-          <button class="selbut">
-              Transportation
-          </button>
-      </a>
-      <a href = "cusamnt.html">
-        <button class="selbut">
-            Custom
-        </button>
-    </a>
+    <div class = "inbox">
+        <label> Enter Your Carbon Emission(metric tons of CO2):</label><br>
+        <input type="text" id = "fl" class = "box"><br>
+        <input type="submit" value="Submit" class = "sub" onclick = "calc(
+         document.getElementById('fl').value)";>
+        <p> Your Carbon Fee:<br></p>
+        <p id = "sum"></p>
+        <p> ZCARB</p><br>
+        <p>(1 ZCARB is paid for every 1000 kg of Carbon emission)</p>
+
+
     </div>
     <div class="modal-list">
-      <a href = "popup.html">
-        <button class = "selbut2">
-            back
+      <a href = "calculation.html">
+          <button class = "selbut">
+              back
+          </button>
+      </a>
+      <a href = "">
+        <button class = "selbut">
+            pay
         </button>
     </a>
     </div>

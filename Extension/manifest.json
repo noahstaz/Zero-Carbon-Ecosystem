@@ -1,4 +1,5 @@
 {
+  
   "manifest_version": 2,
 
   "name": "Carbon Coin",
@@ -10,4 +11,5 @@
     "default_popup": "popup.html"
   },
   "permissions": ["activeTab"]
+
 }

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;1,500&family=Secular+One&display=swap" rel="stylesheet">
+  <head>
     <title>Donating Carbon Coin for Environment</title>
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans"
@@ -17,16 +17,12 @@
       crossorigin="anonymous"
     />
     <script type="text/javascript">
-        function calc(electricity, natgas, heatoil, coal, lpg, propane, woodpallet){
-            var sum = 0;
-            sum += electricity * 0.0004239;
-            sum += natgas * 0.00018316;
-            sum += heatoil * 0.009615;
-            sum += coal * 0.00034462;
-            sum += lpg * 0.00628608;
-            sum += propane * 0.00589423;
-            sum += woodpallet * 0.07261754;
-            document.getElementById("sum").innerHTML = sum;
+        function calc(flight, car, railway){
+          var sum = 0;
+          sum += flight * 0.090;
+          sum += car * 0.000206;
+          sum += railway * 0.000012;
+          document.getElementById("sum").innerHTML = sum;
         }
     </script>
     <style>
@@ -39,7 +35,7 @@
         margin: 0;
         min-height: 500px;
         padding: 0;
-        color: yellow;
+        color: ghostwhite;
         width: 400px;
       }
         
@@ -47,7 +43,7 @@
         font-size: 22px;
         font-weight: 400;
         margin: 0;
-        color: yellow;
+        color: ghostwhite;
       }
 
       a:link,
@@ -57,7 +53,7 @@
         text-decoration: none;
       }
       .headcol{
-          background-color: darkslategray;
+          background-color: green;
       }
       img {
         width: 30px;
@@ -91,7 +87,6 @@
         
       }
       .modal-list {
-          align-items: center;
           padding: 0 22px;
           padding-top: 40px;
           text-align: center;
@@ -99,11 +94,10 @@
           padding-bottom: 40px;
       }
       .selbut{
-        font-size: 20px;
-        text-align: center;
-        width: 150px;
+        font-size: 10px;
+        width: 50px;
         margin-right: 20px;
-        height: 150px;
+        height: 50px;
         border-radius: 50%;
         color: black;
         border: 3px solid;
@@ -111,11 +105,11 @@
         border-color: black;
       }
       .selbut:hover{
-          font-size: 20px;
+          font-size: 10px;
           border: none;
-          color: yellow;
-          border-color: yellow;
-          background-color: darkslategray;
+          color: ghostwhite;
+          border-color: ghostwhite;
+          background-color: green;
       }
       .modal-content {
         border-top: 0.5px solid black;
@@ -188,19 +182,30 @@
         <input type="text" id = "pr" class = "box"><br>
         <label> Wooden Pallets(metric tons):</label><br>
         <input type="text" id = "wp" class = "box"><br>
-        <input type="submit" value="Submit" class = "sub" onclick = "calc(
-        document.getElementById('el').value,
+        <input type="submit" value="Submit" class = "sub" onclick = "calc(document.getElementById('el').value,
          document.getElementById('ng').value, 
          document.getElementById('ho').value, 
          document.getElementById('cp').value, 
          document.getElementById('lpg').value, 
          document.getElementById('pr').value, 
          document.getElementById('wp').value)";>
-         <p> Your Carbon Fee:<br></p>
+        <p> Your Carbon Fee:<br></p>
         <p id = "sum"></p>
-        <p> ZCARB</p>
+        <p> ZCARB</p><br>
+        <p>(1 ZCARB is paid for every 1000 kg of Carbon emission)</p>
 
     </div>
-
+    <div class="modal-list">
+      <a href = "calculation.html">
+          <button class = "selbut">
+              back
+          </button>
+      </a>
+      <a href = "">
+        <button class = "selbut">
+            pay
+        </button>
+    </a>
+    </div>
   </body>
 </html>
