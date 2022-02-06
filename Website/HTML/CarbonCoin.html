@@ -6,6 +6,7 @@
         <link type="text/css" rel="stylesheet" href="CarbonCoin.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;1,500&family=Secular+One&display=swap" rel="stylesheet">
        
         <div class = "header" id = "-1">
         <div class = "title" id = "0">
@@ -56,10 +57,59 @@
         
             <h2>FAQ</h2>
             
+            <button class="accordion">Question 1</button>
+            <div class="panel">
+            <p>Answer 1</p>
+            </div>
+
+            <button class="accordion">Question 2</button>
+            <div class="panel">
+            <p>Answer 2</p>
+            </div>
+
+            <button class="accordion">Question 3</button>
+            <div class="panel">
+            <p>Answer 2</p>
+            </div>
+            
         </div>
         <div class = "footer" id = "7">
         
         </div>
+        
+        <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+            });
+            }
+            
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+                });
+            }
+        
+        </script>
 
     
     
