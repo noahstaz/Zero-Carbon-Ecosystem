@@ -20,7 +20,9 @@
   text-decoration: underline;
   font-size: 30px;
   background-color: slategrey;
-    
+  border-radius: 10px;
+  border-style: groove;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .webNav {
@@ -47,38 +49,74 @@
 .aboutUs h2 {
     font-family: 'Secular One', sans-serif;
     text-align: center;
+    font-size: 80px;
+    
+}
+
+.gif{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 50px
 }
 
 .ecoSystem h2 {
     font-family: 'Secular One', sans-serif;
     text-align: center;
+    font-size: 80px;
+    padding-bottom: 40px;
 }
 
 .ourAims h2 {
     font-family: 'Secular One', sans-serif;
     text-align: center;
+    font-size: 80px;
+}
+
+.ourAims h4 {
+    font-size: 40px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.chrome {
+    height: 22px;
+    width: 22px;
+}
+
+.footer{
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.arrow {
+    width:100px;
+    height:100px;
 }
 
 .roadMap h2 {
     font-family: 'Secular One', sans-serif;
     text-align: center;
+    font-size: 80px;
 }
 
 .ourTeam h2 {
     font-family: 'Secular One', sans-serif;
     text-align: center;
+    font-size: 80px;
 }
 
 .faq h2 {
     font-family: 'Secular One', sans-serif;
     text-align: center;
+    font-size: 80px;
 }
 
 body {
     background-color: skyblue;
 }
 
-/* Style the buttons that are used to open and close the accordion panel */
+
 .accordion {
   background-color: black;
   color: lawngreen;
@@ -91,21 +129,45 @@ body {
   transition: 0.4s;
   font-family: 'DM Sans', sans-serif;
   font-size: 16px;
+  border-radius: 20px;
+  border-style: groove;
+    
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
 .active, .accordion:hover {
-  background-color: #ccc;
+  background-color: #111112;
 }
 
-/* Style the accordion panel. Note: hidden by default */
 .panel {
   padding: 0 18px;
   background-color: #111111;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease-out;
+  transition: max-height 0.2s ease-out;
   font-family: 'DM Sans', sans-serif;
   color: aquamarine;
+  border-radius: 20px;
+  border-style: groove;
+}
 
+.pin{
+    width:20px;
+    height:30px;
+    padding-left: 50px;
+}
+
+.roadMap h6{
+    font-size: 25px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.check {
+    width: 25px;
+    height: 25px;
+    background-color: azure;
+    border-radius: 45px;
+    border-style: outset;
+    padding: 10px;
+    background-position: right;
 }
